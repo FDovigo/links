@@ -49,11 +49,11 @@ linkTree = dbc.Container([
             html.Img(src = imgFace, style = {"margin-top": "10vh", "height": "20vh"}),
             html.H1("Felipe Dovigo", className = "text-light", style = {"margin-top": "5vh", "text-align": "center", "font-size": "3vh"}),
 
-            # html.H1("USP-Lorena", className = "text-body", style = {"margin-top": "2.5vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
-            # html.H1("Graduação Engenharia de Materiais", className = "text-body", style = {"margin-top": "0vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
+            html.H1("USP-Lorena", className = "text-body", style = {"margin-top": "2vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
+            html.H1("Graduação Engenharia de Materiais", className = "text-body", style = {"margin-top": "0vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
 
-            html.H1("USP-ESALQ", className = "text-body", style = {"margin-top": "2vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
-            html.H1("Pós-Graduando Engenharia de Software", className = "text-body", style = {"margin-top": "0vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
+            #html.H1("USP-ESALQ", className = "text-body", style = {"margin-top": "2vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
+            #html.H1("Pós-Graduando Engenharia de Software", className = "text-body", style = {"margin-top": "0vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
 
 
             dbc.Stack([
