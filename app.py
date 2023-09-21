@@ -15,6 +15,7 @@ from dash.dependencies import Input, Output, State
 ##====================================================================================================##
 #Essential Functions for Code and App Start
 ##====================================================================================================##
+
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.SOLAR, dbc.icons.BOOTSTRAP])
 server = app.server
 
@@ -26,7 +27,6 @@ server = app.server
 #Varibles and Code Functions
 ##====================================================================================================##
 
-#Variables
 imgFace = "https://raw.githubusercontent.com/FDovigo/imageRepository/main/LinkTree/meNoBG.png"
 
 
@@ -49,11 +49,11 @@ linkTree = dbc.Container([
             html.Img(src = imgFace, style = {"margin-top": "10vh", "height": "20vh"}),
             html.H1("Felipe Dovigo", className = "text-light", style = {"margin-top": "5vh", "text-align": "center", "font-size": "3vh"}),
 
-            html.H1("USP-Lorena", className = "text-body", style = {"margin-top": "2vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
-            html.H1("Graduação Engenharia de Materiais", className = "text-body", style = {"margin-top": "0vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
+            # html.H1("USP-Lorena", className = "text-body", style = {"margin-top": "2.5vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
+            # html.H1("Graduação Engenharia de Materiais", className = "text-body", style = {"margin-top": "0vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
 
-            #html.H1("USP-ESALQ", className = "text-body", style = {"margin-top": "2vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
-            #html.H1("Pós-Graduando Engenharia de Software", className = "text-body", style = {"margin-top": "0vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
+            html.H1("USP-ESALQ", className = "text-body", style = {"margin-top": "2vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
+            html.H1("Pós-Graduando Engenharia de Software", className = "text-body", style = {"margin-top": "0vh", "margin-bottom": "0", "text-align": "center", "font-size": "2vh"}),
 
 
             dbc.Stack([
@@ -110,32 +110,6 @@ app.layout = dbc.Container([
 #Web Interactivity
 ##====================================================================================================##
 
-# @app.callback(
-#     Output("left-content", "children"),
-#     [
-#     Input("url", "pathname")
-#     ]
-# )
-
-# def render_page(pathname):
-
-#     if pathname == "/" or pathname == "/sharpy":
-#         colleft = 6
-#         colright = 6
-#         return leftSharpy, rightSharpy, colleft, colright
-    
-#     if pathname == "/backtest":
-#         colleft = 7
-#         colright = 5
-#         return leftBacktest, rightBacktest, colleft, colright
-    
-#     if pathname == "/strategy":
-#         colleft = 8
-#         colright = 4
-#         return leftStrategy, rightStrategy, colleft, colright
-
-
-
 
 
 ##====================================================================================================##
@@ -143,50 +117,10 @@ app.layout = dbc.Container([
 ##====================================================================================================##
 
 
-@app.callback(
-    [
-
-    ],
-
-    [
-
-    ]
-)
-
-def update(date):
-
-
-   
-    return
-
-
-
-
 
 ##====================================================================================================##
 #App Styling
 ##====================================================================================================##
-
-# @app.callback(
-#     Output("nav-collapse", "is_open"),
-#     [
-#     Input("nav-toggler", "n_clicks")
-#     ],
-#     [
-#     State("nav-collapse", "is_open") 
-#     ]
-# )
-
-# def toggle_nav_collapse(n, is_open):
-
-#     if n:
-#         return not is_open
-#     return is_open
-
-
-
-
-
 
 
 
